@@ -1,0 +1,9 @@
+services:
+  visualization:
+    build:
+      context: ../..
+      dockerfile: homework_1/visualization/Dockerfile
+    image: homework1-visualization
+    ports:
+      - "8080:80"   # при занятом порте поменяйте на другой, например "3000:80"
+    restart: unless-stopped
