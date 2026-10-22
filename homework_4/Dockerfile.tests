@@ -1,0 +1,4 @@
+FROM python:3.13-alpine
+WORKDIR /app
+COPY . /app/homework_4
+CMD ["python", "-m", "unittest", "discover", "-s", "homework_4", "-t", ".", "-v"]
