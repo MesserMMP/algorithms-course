@@ -76,7 +76,7 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers(); self.wfile.write(body)
 
     def do_GET(self):
-        root = Path(__file__).parent / "visualization" / "dist"
+        root = Path(__file__).parent / "dist"
         route = urlparse(self.path).path.removeprefix("/visualization").lstrip("/")
         file = (root / (route or "index.html")).resolve()
         if not file.is_relative_to(root.resolve()) or not file.is_file():

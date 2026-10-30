@@ -23,7 +23,7 @@ docker compose -f homework_5/visualization/docker-compose.yml down
 Node.js 24+, Python 3.10+. В двух терминалах из корня:
 
 ```sh
-python3 -m homework_5.server
+python3 -m homework_5.visualization.server
 ```
 
 ```sh

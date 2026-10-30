@@ -1,5 +1,5 @@
 import unittest
-from homework_5.server import generate
+from homework_5.visualization.server import generate
 
 class Tests(unittest.TestCase):
     def test_real_results_and_stack(self):

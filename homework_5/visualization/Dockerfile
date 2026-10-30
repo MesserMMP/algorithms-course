@@ -11,4 +11,4 @@ COPY --from=build /app/homework_5/visualization/dist /app/homework_5/visualizati
 ENV PYTHONDONTWRITEBYTECODE=1
 USER 10001:10001
 EXPOSE 8085
-CMD ["python", "-m", "homework_5.server"]
+CMD ["python", "-m", "homework_5.visualization.server"]
