@@ -1,0 +1,24 @@
+.reader {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(20px, 3vw, 46px);
+  padding: clamp(16px, 2.2vw, 32px);
+  border-top: 1px solid #d7dcd4;
+  color: #283a32;
+}
+.reader-notes h3 {margin: 0; font-size:18px; font-weight:600; line-height:1.4}
+.reader-notes p,.reader-notes dd {font-size: 14px; line-height: 1.6; max-width: 68ch}
+.reader-notes p {margin: 7px 0 15px}
+.reader-notes dl {margin: 0; border-top: 1px solid #d7dcd4; padding-top: 10px}
+.reader-notes dt {font-size: 13px; font-weight: 650}
+.reader-notes dd {color: #506157; margin: 3px 0 12px}
+.reader-cli code {overflow-wrap:anywhere; font-size:12px}
+.reader-source {min-width:0}
+.reader-file {display:flex; gap: 8px; align-items:center; min-width:0}
+.reader-file select {max-width:calc(100% - 25px); min-width:0; font-size:13px; padding:6px 9px}
+.reader pre {
+  margin:10px 0 0; padding:16px; max-height:320px; overflow:auto;
+  border-radius:10px; background:#1e322c; color:#eaf1e7;
+  font:12px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace; tab-size:4;
+}
+@media (max-width:740px) {.reader {grid-template-columns:minmax(0,1fr)}}
